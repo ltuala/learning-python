@@ -5,9 +5,22 @@ while True:
     
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a todo: ") + "\n"
+
+            file = open('todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             todos.append(todo)
+
+            file = open('todos.txt', 'w')
+            file.writelines(todos)
+            file.close()
         case 'show':
+            file = open('todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+            
             for idx, todo in enumerate(todos):
                 print(f"{idx+1}-{todo}")
         case 'edit':
