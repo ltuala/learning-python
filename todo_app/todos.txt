@@ -1,2 +1,4 @@
 clean
 throw
+store
+add
