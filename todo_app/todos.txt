@@ -1,4 +1,4 @@
 clean
-throw
 store
 add
+new todo

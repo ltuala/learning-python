@@ -6,7 +6,7 @@ import FreeSimpleGUI as sg
 #     os.environ.setitem('DISPLAY', ':0.0')
 import time
 
-sg.theme("Black")
+# sg.theme("Black")
 
 clock = sg.Text('', key='clock')
 label = sg.Text("Type in a to-do")
